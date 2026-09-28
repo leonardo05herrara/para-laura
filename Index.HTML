@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Para Laura ❤️</title>
+
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+
+    <!-- PANTALLA 1 -->
+    <section id="pantalla1" class="pantalla activa">
+
+        <div class="corazon">♡</div>
+
+        <h1>Para Laura ❤️</h1>
+
+        <p class="subtitulo">
+            Hay personas que llegan a nuestra vida
+            y hacen que todo se vuelva un poquito más bonito.
+        </p>
+
+        <div class="carta">
+
+            <p>
+                Laura, hice este pequeño espacio especialmente para ti.
+            </p>
+
+            <p>
+                No hace falta que sean grandes palabras para expresar
+                lo especial que puede ser una persona.
+            </p>
+
+            <p>
+                A veces un pequeño detalle puede guardar
+                un sentimiento enorme. 🌷
+            </p>
+
+        </div>
+
+        <div class="versiculo">
+
+            <h2>Un pequeño mensaje de la Biblia 📖</h2>
+
+            <p>
+                “Con toda humildad y mansedumbre, soportándoos
+                con paciencia los unos a los otros en amor.”
+            </p>
+
+            <strong>Efesios 4:2</strong>
+
+        </div>
+
+        <button onclick="siguientePantalla(2)">
+            Continuar 💕
+        </button>
+
+    </section>
+
+
+    <!-- PANTALLA 2 -->
+  <!-- PANTALLA 2 -->
+<section id="pantalla2" class="pantalla">
+
+    <h1>Elige una flor 🌷</h1>
+
+    <p class="subtitulo">
+        Escoge una flor y descubre una pequeña sorpresa. ❤️
+    </p>
+
+    <!-- SELECCIÓN DE FLORES -->
+    <div id="seleccionFlores" class="flores">
+
+        <div class="flor" onclick="seleccionarFlor('🌹', 'Rosa')">
+            <span>🌹</span>
+            <p>Rosa</p>
+        </div>
+
+        <div class="flor" onclick="seleccionarFlor('🌷', 'Tulipán')">
+            <span>🌷</span>
+            <p>Tulipán</p>
+        </div>
+
+        <div class="flor" onclick="seleccionarFlor('🌻', 'Girasol')">
+            <span>🌻</span>
+            <p>Girasol</p>
+        </div>
+
+        <div class="flor" onclick="seleccionarFlor('🌸', 'Flor de cerezo')">
+            <span>🌸</span>
+            <p>Flor de cerezo</p>
+        </div>
+
+        <div class="flor" onclick="seleccionarFlor('🌺', 'Hibisco')">
+            <span>🌺</span>
+            <p>Hibisco</p>
+        </div>
+
+        <div class="flor" onclick="seleccionarFlor('💐', 'Ramo')">
+            <span>💐</span>
+            <p>Ramo</p>
+        </div>
+
+    </div>
+
+
+    <!-- FLOR ELEGIDA -->
+
+    <div id="florElegida" class="florElegida">
+
+        <div id="florGrande"
+             onclick="abrirMensaje()">
+            🌸
+        </div>
+
+        <p id="instruccion">
+            Toca la flor 💕
+        </p>
+
+    </div>
+
+
+    <!-- MENSAJE OCULTO -->
+
+    <div id="mensajeBonito" class="mensajeBonito">
+
+        <h2>Para ti, Laura ❤️</h2>
+
+        <p id="mensajeTexto"></p>
+
+        <div class="versiculoFlor">
+
+            <p id="textoVersiculo"></p>
+
+            <strong id="nombreVersiculo"></strong>
+
+        </div>
+
+        <button onclick="siguientePantalla(3)">
+            Continuar 💕
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- ========================================
+     PANTALLA 3
+======================================== -->
+
+<section id="pantalla3" class="pantalla">
+
+    <div class="corazon">💖</div>
+
+    <h1>Una última dedicatoria</h1>
+
+    <!-- DEDICATORIA -->
+    <div class="carta">
+
+        <p id="dedicatoriaFinal">
+            Para ti, Laura ❤️
+        </p>
+
+        <p id="textoFinal">
+            Esta pequeña sorpresa fue creada especialmente para ti. ❤️
+        </p>
+
+        <p>
+            Que Dios acompañe siempre tus pasos
+            y llene tu vida de momentos hermosos.
+        </p>
+
+    </div>
+
+
+    <!-- VERSÍCULO FINAL -->
+
+    <div class="versiculo">
+
+        <p id="versiculoFinal">
+            “Con amor y cariño.”
+        </p>
+
+        <strong id="referenciaFinal">
+            ❤️
+        </strong>
+
+    </div>
+
+
+    <!-- BOTÓN FINALIZAR -->
+
+    <button onclick="finalizar()">
+        Finalizar 🌸
+    </button>
+
+
+    <!-- ========================================
+         MENSAJE DE DESPEDIDA
+    ======================================== -->
+
+    <div id="despedida" class="despedida">
+
+        <div class="corazon">
+            🌸
+        </div>
+
+        <h2>
+            Hasta aquí llega esta pequeña sorpresa 💕
+        </h2>
+
+        <p>
+            Gracias por tomarte el tiempo de recorrer
+            cada parte de esta página.
+            Espero que cada detalle te haya regalado
+            un momento bonito.
+        </p>
+
+        <p>
+            No importa cuánto tiempo pase, siempre habrá
+            recuerdos, momentos y pequeños detalles
+            que vale la pena guardar.
+        </p>
+
+        <p>
+            Sigue siendo tú, disfruta cada etapa de tu vida
+            y nunca pierdas esa forma especial de ver las cosas. ✨
+        </p>
+
+        <p class="bendicion">
+            Dios te bendiga siempre, Laura. ❤️
+        </p>
+
+
+        <!-- VOLVER AL INICIO -->
+
+        <button onclick="volverAlInicio()">
+            Volver al inicio 💕
+        </button>
+
+    </div>
+
+
+    <!-- FLORES QUE CAEN -->
+
+    <div id="lluviaFlores"></div>
+
+</section>
+
+<script src="Script.js"></script>
+
+</body>
+</html>
