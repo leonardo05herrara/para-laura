@@ -1,258 +1,434 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Para Laura ❤️</title>
-
-    <link rel="stylesheet" href="Style.css">
+    <title>Para Laura</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Style.css?v=valor">
 </head>
 
 <body>
 
-    <!-- PANTALLA 1 -->
-    <section id="pantalla1" class="pantalla activa">
+    <div class="petalos-caida" id="petalosCaida"></div>
 
-        <div class="corazon">♡</div>
-
-        <h1>Para Laura ❤️</h1>
-
-        <p class="subtitulo">
-            Hay personas que llegan a nuestra vida
-            y hacen que todo se vuelva un poquito más bonito.
-        </p>
-
-        <div class="carta">
-
-            <p>
-                Laura, hice este pequeño espacio especialmente para ti.
-            </p>
-
-            <p>
-                No hace falta que sean grandes palabras para expresar
-                lo especial que puede ser una persona.
-            </p>
-
-            <p>
-                A veces un pequeño detalle puede guardar
-                un sentimiento enorme. 🌷
-            </p>
-
-        </div>
-
-        <div class="versiculo">
-
-            <h2>Un pequeño mensaje de la Biblia 📖</h2>
-
-            <p>
-                “Con toda humildad y mansedumbre, soportándoos
-                con paciencia los unos a los otros en amor.”
-            </p>
-
-            <strong>Efesios 4:2</strong>
-
-        </div>
-
-        <button onclick="siguientePantalla(2)">
-            Continuar 💕
+    <div class="sobre-overlay" id="sobreOverlay">
+        <button type="button" class="sobre" id="botonSobre" aria-label="Abrir carta para Laura">
+            <span class="sobre-solapa"></span>
+            <span class="sobre-frente">
+                <span class="sobre-pista">Toca para abrir la carta</span>
+            </span>
+            <span class="sobre-sello">Para Laura</span>
         </button>
+    </div>
 
-    </section>
-
-
-    <!-- PANTALLA 2 -->
-  <!-- PANTALLA 2 -->
-<section id="pantalla2" class="pantalla">
-
-    <h1>Elige una flor 🌷</h1>
-
-    <p class="subtitulo">
-        Escoge una flor y descubre una pequeña sorpresa. ❤️
-    </p>
-
-    <!-- SELECCIÓN DE FLORES -->
-    <div id="seleccionFlores" class="flores">
-
-        <div class="flor" onclick="seleccionarFlor('🌹', 'Rosa')">
-            <span>🌹</span>
-            <p>Rosa</p>
-        </div>
-
-        <div class="flor" onclick="seleccionarFlor('🌷', 'Tulipán')">
-            <span>🌷</span>
-            <p>Tulipán</p>
-        </div>
-
-        <div class="flor" onclick="seleccionarFlor('🌻', 'Girasol')">
-            <span>🌻</span>
-            <p>Girasol</p>
-        </div>
-
-        <div class="flor" onclick="seleccionarFlor('🌸', 'Flor de cerezo')">
-            <span>🌸</span>
-            <p>Flor de cerezo</p>
-        </div>
-
-        <div class="flor" onclick="seleccionarFlor('🌺', 'Hibisco')">
-            <span>🌺</span>
-            <p>Hibisco</p>
-        </div>
-
-        <div class="flor" onclick="seleccionarFlor('💐', 'Ramo')">
-            <span>💐</span>
-            <p>Ramo</p>
-        </div>
-
+    <!-- DECORACIÓN FLOTANTE -->
+    <div class="decoracion-flotante" id="decoracionFlotante">
+        <span>❤️</span>
+        <span>🌸</span>
+        <span>✨</span>
+        <span>💗</span>
+        <span>🌷</span>
+        <span>✨</span>
+        <span>❤️</span>
+        <span>🌸</span>
+        <span>💗</span>
+        <span>🌷</span>
+        <span>✨</span>
+        <span>❤️</span>
+        <span>🕊️</span>
+        <span>🎀</span>
+        <span>🤍</span>
+        <span>🌿</span>
+        <span class="mariposa">🦋</span>
+        <span class="mariposa">🦋</span>
+        <span class="mariposa">🦋</span>
     </div>
 
 
-    <!-- FLOR ELEGIDA -->
+    <!-- =========================
+         CUADERNO
+    ========================== -->
 
-    <div id="florElegida" class="florElegida">
+    <main class="cuaderno">
 
-        <div id="florGrande"
-             onclick="abrirMensaje()">
-            🌸
+        <!-- ESPIRAL -->
+        <div class="espiral">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
 
-        <p id="instruccion">
-            Toca la flor 💕
-        </p>
 
-    </div>
+        <!-- =========================
+             ÚLTIMA PÁGINA
+        ========================== -->
 
+        <section class="hoja hoja-final" id="hojaFinal">
 
-    <!-- MENSAJE OCULTO -->
+            <div class="pagina pagina-final">
+                <span class="flor-prensada arriba-derecha">🌷</span>
+                <span class="flor-prensada abajo-izquierda">🌸</span>
+                <span class="flor-prensada centro-izquierda">💗</span>
+                <span class="flor-prensada centro-derecha">✨</span>
 
-    <div id="mensajeBonito" class="mensajeBonito">
+                <article class="cierre-carta">
+                    <div class="encaje-carta" aria-hidden="true"></div>
+                    <div class="esquina-filigrana izq" aria-hidden="true"></div>
+                    <div class="esquina-filigrana der" aria-hidden="true"></div>
+                    <span class="cinta-washi" aria-hidden="true"></span>
+                    <span class="brillo-carta uno" aria-hidden="true">✦</span>
+                    <span class="brillo-carta dos" aria-hidden="true">✧</span>
+                    <span class="brillo-carta tres" aria-hidden="true">✦</span>
 
-        <h2>Para ti, Laura ❤️</h2>
+                    <div class="lazo-carta" aria-hidden="true">
+                        <span class="lazo-ala izquierda"></span>
+                        <span class="lazo-nudo"></span>
+                        <span class="lazo-ala derecha"></span>
+                    </div>
 
-        <p id="mensajeTexto"></p>
+                    <p class="cierre-dedicatoria">Para Laura, con cariño</p>
+                    <h1>Hasta siempre</h1>
 
-        <div class="versiculoFlor">
+                    <p class="texto-final">
+                        Gracias por guardar cada página de este cuaderno.
+                        Que lo bonito se quede contigo, como un ramo que no se marchita.
+                    </p>
 
-            <p id="textoVersiculo"></p>
+                    <div class="marco-cita">
+                        <span class="rosa-marco" aria-hidden="true">🌸</span>
+                        <blockquote class="cita-josue">
+                            <p>
+                                Josué te ama mucho,<br>
+                                pero Dios te ama<br>
+                                <em>muchísimo más</em>.
+                            </p>
+                            <cite>Con todo el corazón</cite>
+                        </blockquote>
+                        <span class="rosa-marco" aria-hidden="true">🌸</span>
+                    </div>
 
-            <strong id="nombreVersiculo"></strong>
+                    <p class="mensaje-valor">
+                        Laura, para mí no eres un capítulo más: eres alguien a quien
+                        cuido con el corazón en la mano. Tu risa, tu fe, tu forma de
+                        mirar el mundo y hasta tus silencios tienen un peso que no
+                        se compara con nada. Eres valiosa para mí de un modo quieto
+                        y verdadero, y eres infinitamente valiosa para Dios: te pensó,
+                        te nombra y te guarda como a una hija amada. Si alguna vez
+                        dudas de tu lugar, vuelve aquí: importas, y mucho.
+                    </p>
 
-        </div>
+                    <p class="pista-relicario" id="pistaRelicario">
+                        Toca el corazón para leer el secreto de tu flor
+                    </p>
 
-        <button onclick="siguientePantalla(3)">
-            Continuar 💕
-        </button>
+                    <div class="relicario-bloque" id="relicarioBloque">
+                        <div class="cadena" aria-hidden="true"></div>
+                        <button type="button" class="relicario" id="relicario" aria-label="Abrir relicario">
+                            <span class="relicario-brillo" aria-hidden="true"></span>
+                            <span class="relicario-tapa izquierda" aria-hidden="true">
+                                <span class="relicario-l">L</span>
+                            </span>
+                            <span class="relicario-tapa derecha" aria-hidden="true"></span>
+                        </button>
+                        <div class="secreto-caja" id="secretoCaja">
+                            <span id="relicarioEmoji">💗</span>
+                            <strong id="relicarioNombre"></strong>
+                            <p id="secretoRelicario">Elige una flor y vuelve: aquí aparecerá su secreto.</p>
+                        </div>
+                    </div>
 
-    </div>
+                    <p class="bendicion-final">
+                        Que Dios cuide siempre tus pasos, tus sueños
+                        y cada camino que recorras.
+                    </p>
 
-</section>
+                    <div class="palabras-bonitas">
+                        <span>Amor</span>
+                        <span>Cariño</span>
+                        <span>Alegría</span>
+                        <span>Esperanza</span>
+                        <span>Felicidad</span>
+                        <span>Paz</span>
+                        <span>Bondad</span>
+                        <span>Gratitud</span>
+                    </div>
 
+                    <button
+                        class="boton-principal"
+                        id="botonVolverInicio"
+                        onclick="volverAlInicio()">
+                        <span class="perla"></span>
+                        Volver al inicio
+                        <span class="perla"></span>
+                    </button>
+                </article>
 
-<!-- ========================================
-     PANTALLA 3
-======================================== -->
+            </div>
 
-<section id="pantalla3" class="pantalla">
-
-    <div class="corazon">💖</div>
-
-    <h1>Una última dedicatoria</h1>
-
-    <!-- DEDICATORIA -->
-    <div class="carta">
-
-        <p id="dedicatoriaFinal">
-            Para ti, Laura ❤️
-        </p>
-
-        <p id="textoFinal">
-            Esta pequeña sorpresa fue creada especialmente para ti. ❤️
-        </p>
-
-        <p>
-            Que Dios acompañe siempre tus pasos
-            y llene tu vida de momentos hermosos.
-        </p>
-
-    </div>
-
-
-    <!-- VERSÍCULO FINAL -->
-
-    <div class="versiculo">
-
-        <p id="versiculoFinal">
-            “Con amor y cariño.”
-        </p>
-
-        <strong id="referenciaFinal">
-            ❤️
-        </strong>
-
-    </div>
-
-
-    <!-- BOTÓN FINALIZAR -->
-
-    <button onclick="finalizar()">
-        Finalizar 🌸
-    </button>
-
-
-    <!-- ========================================
-         MENSAJE DE DESPEDIDA
-    ======================================== -->
-
-    <div id="despedida" class="despedida">
-
-        <div class="corazon">
-            🌸
-        </div>
-
-        <h2>
-            Hasta aquí llega esta pequeña sorpresa 💕
-        </h2>
-
-        <p>
-            Gracias por tomarte el tiempo de recorrer
-            cada parte de esta página.
-            Espero que cada detalle te haya regalado
-            un momento bonito.
-        </p>
-
-        <p>
-            No importa cuánto tiempo pase, siempre habrá
-            recuerdos, momentos y pequeños detalles
-            que vale la pena guardar.
-        </p>
-
-        <p>
-            Sigue siendo tú, disfruta cada etapa de tu vida
-            y nunca pierdas esa forma especial de ver las cosas. ✨
-        </p>
-
-        <p class="bendicion">
-            Dios te bendiga siempre, Laura. ❤️
-        </p>
+        </section>
 
 
-        <!-- VOLVER AL INICIO -->
+        <!-- =========================
+             PÁGINA 3
+        ========================== -->
 
-        <button onclick="volverAlInicio()">
-            Volver al inicio 💕
-        </button>
+        <section class="hoja hoja-3" id="hoja3">
 
-    </div>
+            <div class="pagina">
+                <span class="flor-prensada arriba-derecha">🌺</span>
+                <span class="flor-prensada abajo-izquierda">🌼</span>
+
+                <div id="mensajeSeleccionado">
+
+                    <h1>Un mensaje para ti</h1>
+
+                    <div class="flor-grande">
+                        🌸
+                    </div>
+
+                    <h2>Elige una flor</h2>
+
+                    <p>
+                        Cada flor guarda un mensaje especial.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
 
 
-    <!-- FLORES QUE CAEN -->
+        <!-- =========================
+             PÁGINA 2
+        ========================== -->
 
-    <div id="lluviaFlores"></div>
+        <section class="hoja hoja-2" id="hoja2">
 
-</section>
+            <div class="pagina">
+                <span class="flor-prensada arriba-derecha">🌻</span>
+                <span class="flor-prensada abajo-izquierda">💗</span>
 
-<script src="Script.js"></script>
+                <h1>Elige una flor</h1>
+
+                <p class="subtitulo">
+                    Cada una guarda algo especial para ti.
+                </p>
+
+
+                <div class="flores-grid">
+
+                    <button onclick="seleccionarFlor(0)">
+                        <span class="flor">🌹</span>
+                        <span>Rosa</span>
+                    </button>
+
+                    <button onclick="seleccionarFlor(1)">
+                        <span class="flor">🌷</span>
+                        <span>Tulipán</span>
+                    </button>
+
+                    <button onclick="seleccionarFlor(2)">
+                        <span class="flor">🌻</span>
+                        <span>Girasol</span>
+                    </button>
+
+                    <button onclick="seleccionarFlor(3)">
+                        <span class="flor">🌸</span>
+                        <span>Cerezo</span>
+                    </button>
+
+                    <button onclick="seleccionarFlor(4)">
+                        <span class="flor">🌺</span>
+                        <span>Hibisco</span>
+                    </button>
+
+                    <button onclick="seleccionarFlor(5)">
+                        <span class="flor">💐</span>
+                        <span>Ramo</span>
+                    </button>
+
+                    <button onclick="seleccionarFlor(6)">
+                        <span class="flor">🌼</span>
+                        <span>Margarita</span>
+                    </button>
+
+                    <button onclick="seleccionarFlor(7)">
+                        <span class="flor">🪻</span>
+                        <span>Lavanda</span>
+                    </button>
+
+                    <button onclick="seleccionarFlor(8)">
+                        <span class="flor">🌷</span>
+                        <span>Orquídea</span>
+                    </button>
+
+                    <button onclick="seleccionarFlor(9)">
+                        <span class="flor">🌹</span>
+                        <span>Clavel</span>
+                    </button>
+
+                    <button onclick="seleccionarFlor(10)">
+                        <span class="flor">🌼</span>
+                        <span>Caléndula</span>
+                    </button>
+
+                    <button onclick="seleccionarFlor(11)">
+                        <span class="flor">🌺</span>
+                        <span>Azalea</span>
+                    </button>
+
+                    <button onclick="seleccionarFlor(12)">
+                        <span class="flor">🌸</span>
+                        <span>Dalia</span>
+                    </button>
+
+                    <button onclick="seleccionarFlor(13)">
+                        <span class="flor">💐</span>
+                        <span>Ramillete</span>
+                    </button>
+
+                    <button onclick="seleccionarFlor(14)">
+                        <span class="flor">🌼</span>
+                        <span>Gerbera</span>
+                    </button>
+
+                    <button onclick="seleccionarFlor(15)">
+                        <span class="flor">🪻</span>
+                        <span>Jacinto</span>
+                    </button>
+
+                    <button onclick="seleccionarFlor(16)">
+                        <span class="flor">🌹</span>
+                        <span>Gardenia</span>
+                    </button>
+
+                    <button onclick="seleccionarFlor(17)">
+                        <span class="flor">🌷</span>
+                        <span>Violeta</span>
+                    </button>
+
+                    <button onclick="seleccionarFlor(18)">
+                        <span class="flor">🌻</span>
+                        <span>Magnolia</span>
+                    </button>
+
+                    <button onclick="seleccionarFlor(19)">
+                        <span class="flor">🌸</span>
+                        <span>Peonía</span>
+                    </button>
+
+                    <button onclick="seleccionarFlor(20)">
+                        <span class="flor">🌺</span>
+                        <span>Begonia</span>
+                    </button>
+
+                    <button onclick="seleccionarFlor(21)">
+                        <span class="flor">🌼</span>
+                        <span>Petunia</span>
+                    </button>
+
+                    <button onclick="seleccionarFlor(22)">
+                        <span class="flor">🌸</span>
+                        <span>Azucena</span>
+                    </button>
+
+                    <button onclick="seleccionarFlor(23)">
+                        <span class="flor">🪻</span>
+                        <span>Hortensia</span>
+                    </button>
+
+                    <button onclick="seleccionarFlor(24)">
+                        <span class="flor">🌹</span>
+                        <span>Amapola</span>
+                    </button>
+
+                    <button onclick="seleccionarFlor(25)">
+                        <span class="flor">🌷</span>
+                        <span>Gladiolo</span>
+                    </button>
+
+                    <button onclick="seleccionarFlor(26)">
+                        <span class="flor">🌼</span>
+                        <span>Alhelí</span>
+                    </button>
+
+                    <button onclick="seleccionarFlor(27)">
+                        <span class="flor">🌺</span>
+                        <span>Camellia</span>
+                    </button>
+
+                    <button onclick="seleccionarFlor(28)">
+                        <span class="flor">🌸</span>
+                        <span>Adelfa</span>
+                    </button>
+
+                    <button onclick="seleccionarFlor(29)">
+                        <span class="flor">🌼</span>
+                        <span>Cosmos</span>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             PÁGINA 1
+        ========================== -->
+
+        <section class="hoja hoja-1" id="hoja1">
+
+            <div class="pagina">
+                <span class="flor-prensada arriba-derecha">🌹</span>
+                <span class="flor-prensada abajo-izquierda">✨</span>
+
+                <h1>Para Laura</h1>
+
+                <h2>
+                    Un pequeño cuaderno de recuerdos
+                </h2>
+
+                <p
+                    id="mensajeInicio"
+                    class="mensaje-inicio">
+                </p>
+
+                <div
+                    id="versiculoInicio"
+                    class="versiculo-inicio">
+                </div>
+
+                <button
+                    class="boton-principal"
+                    onclick="pasarAFlores()">
+                    <span class="perla"></span>
+                    Abrir el cuaderno
+                    <span class="perla"></span>
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="Script.js"></script>
 
 </body>
 </html>
