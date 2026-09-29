@@ -415,6 +415,40 @@ const secretosRelicario = [
 ];
 
 
+const mensajesValor = [
+    "Si pudiera dejarte una nota en el bolsillo, diría: Laura, no eres un extra en mi vida. Te tengo presente. Y si Dios llevara agenda, tu nombre no estaría escrito a lápiz: te conoce por hija, no por número.",
+    "Hoy no te pido que florezcas más rápido. Solo que recuerdes esto: para mí ya eres suficiente motivo de cuidado. Para el Padre, fuiste idea buena desde el principio. Nadie te está haciendo un favor al quererte.",
+    "Cuando el día se nuble, no traduzcas eso como “no valgo”. Yo te veo incluso entonces. Dios no apaga la luz sobre ti porque tengas miedo. Tu vida no se mide por un rato oscuro.",
+    "Hay personas que se olvidan fácil. Tú no. Me quedo con tus detalles, con tu fe, con cómo miras las cosas. En el cielo tampoco eres un borrador: eres conocida, amada, esperada.",
+    "No tienes que copiar a nadie para merecer un lugar. A mí me importa la Laura que ya eres. A Dios también: no pidió una versión más cómoda de ti. Pidió la tuya.",
+    "Si alguna vez sientes que sobras en una mesa, ven a esta página. Aquí hay sitio. Yo te cuento entre lo que no quiero perder. Dios te cuenta entre los que llama por nombre.",
+    "Lo que haces en silencio —orar, cuidar, seguir— para mí pesa más que un discurso. Eso también lo ve el Señor. Tu valor no espera un escenario; ya está en lo cotidiano.",
+    "No hace falta que produzcas paz para merecer paz. Me importas cansada, igual que contenta. Dios no te quiere solo cuando rindes: te quiere mientras descansas, porque eres suya.",
+    "El mundo premia lo fácil de etiquetar. Tú no cabes en una etiqueta, y eso no te resta: te distingue. Yo lo noto. Dios lo diseñó. No estás “rara”: estás hecha a propósito.",
+    "Mi cariño por ti no es un anuncio de temporada. Es de los que se quedan. El de Dios todavía más: no depende de que tú lo sientas fuerte hoy. Él no se muda cuando tú dudas.",
+    "Gracias por existir en mi historia. Eso ya es un regalo, no un trámite. Y el Padre no te mira como quien revisa deudas: te mira con misericordia que no se le acaba el inventario.",
+    "Hay vientos que doblan, no que definen. Yo no te reduzco a un mal día. Dios tampoco. Sigues siendo querida cuando el capullo se cierra un rato. Eso no te hace menos suya ni menos mía.",
+    "No estás atrasada en un examen de perfección. Yo veo proceso, no fracaso. Dios forma despacio a los que ama. Tu valor no empieza el día en que te sientas “terminada”.",
+    "Aunque sientas el corazón en pedazos, para mí no eres un resto. Eres alguien a quien honro entero. Dios junta lo que nosotros no sabemos atar. En Sus manos no eres recorte: eres persona.",
+    "Me alegra que hayas nacido. Así de simple, así de serio. El Señor se complace en los suyos, y tú estás entre ellos. Tu risa no es un lujo: es parte de lo que el cielo ya recibió como bueno.",
+    "Cada paso pequeño que das cuenta. Yo lo veo. Dios va a tu lado, no al final de una carrera para felicitarte si llegas. Ya te acompaña. Eso dice cuánto vales: no vas sola.",
+    "No tienes que maquillar el alma para que yo te estime, ni para que Dios te reciba. El amor verdadero llega antes que el desempeño. Fuiste amada primero. Eso te coloca en un lugar que no se subasta.",
+    "Si nadie te pone en el centro, igual yo te veo. El Padre ve lo escondido. Tu valor no necesita micrófono. Está en las decisiones quietas, y ahí te encuentro digna de cuidado y de oración.",
+    "Hay lugar para ti. No como invitada de último minuto: como alguien esperado. Yo te dejo espacio. Dios te abre casa. Nunca pidas permiso para existir en el cariño que ya te fue dado.",
+    "No te conformes con migajas de afecto, ni de parte mía ni de parte del mundo. Yo te deseo un bien amplio. El Señor da con medida de Padre, no de tacaño. Tú no eres resto de mesa: eres hija.",
+    "Aunque nadie publique tu nombre, yo lo guardo. Dios no necesita tendencia para recordarte. Floreces también lejos de los focos, y ahí sigues siendo preciosa para los dos.",
+    "Hoy, el día en que leas esto, ya importas. No mañana, cuando “seas mejor”. Yo te tengo en cuenta ahora. Las misericordias de Dios también son de esta mañana, con tu nombre.",
+    "Camina con la frente en calma: no porque debas fingir fuerza, sino porque tu dignidad no está en disputa. Yo te respeto. Dios te carga cuando el cuello se te dobla. Eso es lo que vales: no se grita, se honra.",
+    "No estás de más en la familia de la fe ni en la mía de cariño. Un racimo te necesita a ti, no a una copia. El Señor planta con propósito. Sobraría el mundo si te faltara a ti, no al revés.",
+    "Un rato tuyo ya cambia el color de un día. Yo lo he visto. Dios convierte noches, no las niega. Eres importante en la tristeza y en la alegría: las dos te encuentran amada.",
+    "Te quiero con respeto, no como adorno. Dios te precede en el camino, no te empuja desde atrás como a quien estorba. Tienes dirección y tienes valor. No eres un accidente del jardín.",
+    "Incluso los días feos se vuelven distintos porque estás en ellos. Yo doy gracias por eso. Prueba y verás que el Señor es bueno contigo, no en abstracto: contigo, Laura, en concreto.",
+    "Me conmueve que sigas apareciendo: a la fe, al deber, a la gente. Eso no pasa desapercibido para mí ni para Dios. La constancia tuya es querida. No eres invisible en la rutina.",
+    "Cuido la idea de tu corazón como quien cuida agua viva, no como quien tira algo que “ya no sirve”. Dios manda guardarlo porque de ahí nace vida. Eres manantial, no desecho. Recuérdalo.",
+    "Aunque no entiendas el dibujo completo, yo confío en que tu vida no es un garabato. Dios sí ve el diseño. Para mí eres alguien a quien encomiendo y celebro. Para Él, obra amada. Descansa ahí."
+];
+
+
 /* =====================================================
    MAZO SIN REPETIR HASTA AGOTAR LA LISTA
 ===================================================== */
@@ -625,6 +659,7 @@ function prepararRelicario(flor, indice) {
     const secreto = document.getElementById("secretoRelicario");
     const bloque = document.getElementById("relicarioBloque");
     const pista = document.getElementById("pistaRelicario");
+    const mensajeValor = document.getElementById("mensajeValor");
 
     if (!secreto) {
         return;
@@ -648,6 +683,11 @@ function prepararRelicario(flor, indice) {
     if (pista) {
         pista.textContent = "Toca el corazón para leer el secreto de tu " +
             flor.nombre.toLowerCase();
+    }
+
+    if (mensajeValor) {
+        mensajeValor.textContent = mensajesValor[indice] ||
+            "Eres valiosa para mí y, todavía más, para Dios.";
     }
 }
 
